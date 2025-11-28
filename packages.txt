@@ -1,3 +1,7 @@
 ffmpeg
 default-jre
 build-essential
+rustc
+cargo
+pkg-config
+libssl-dev
