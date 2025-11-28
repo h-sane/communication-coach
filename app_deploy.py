@@ -155,6 +155,11 @@ def main():
 
     if st.session_state.page == "upload":
         st.subheader("1. Add New Submissions")
+        
+        # Important UI hints about cloud service
+        st.info("🌐 **Cloud Processing Notice**: Audio uploads are transcribed via Groq (remote ASR). Make sure your audio is ≤ 2 minutes. Transcription speed depends on the provider and network.")
+        st.info("📝 **Alternative**: For instant results, paste text directly instead of uploading audio files.")
+        
         with st.container():
             st.markdown('<div class="stCard">', unsafe_allow_html=True)
             c1, c2 = st.columns([2,1])
