@@ -1,0 +1,34 @@
+# ============= CORE UI =============
+streamlit==1.31.0
+requests==2.31.0
+pandas==2.2.3
+numpy==1.26.4
+plotly==5.18.0
+
+# ============= NLP / ML =============
+# These versions have wheels for Python 3.11 and DO NOT trigger Rust builds
+sentence-transformers==2.5.1
+transformers==4.39.3
+tokenizers==0.15.2
+huggingface-hub==0.22.2
+
+# spaCy
+spacy==3.7.4
+# we will install en_core_web_sm via Dockerfile
+
+# grammar / sentiment / nlp helpers
+language-tool-python==2.7.1
+vaderSentiment==3.3.2
+nltk==3.8.1
+
+# ============= AUDIO / ASR UTILITIES =============
+# local whisper removed — using Groq Whisper instead
+# openai-whisper==20231117   <-- REMOVE THIS
+librosa==0.10.1
+soundfile==0.12.1
+
+# ============= FORM PARSING =============
+python-multipart==0.0.9
+
+# ============= BUILD HELPERS =============
+wheel==0.40.0
